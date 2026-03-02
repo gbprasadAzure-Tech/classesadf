@@ -1,0 +1,402 @@
+{
+	"name": "Ds_Traget_File_Parameter",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LS_AzureDataLakeStorage",
+			"type": "LinkedServiceReference"
+		},
+		"parameters": {
+			"pFileName": {
+				"type": "string"
+			}
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": {
+					"value": "@dataset().pFileName",
+					"type": "Expression"
+				},
+				"folderPath": "Customers",
+				"fileSystem": "traget"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "Title",
+				"type": "String"
+			},
+			{
+				"name": "First Name",
+				"type": "String"
+			},
+			{
+				"name": "Middle Name",
+				"type": "String"
+			},
+			{
+				"name": "Last Name",
+				"type": "String"
+			},
+			{
+				"name": "Suffix",
+				"type": "String"
+			},
+			{
+				"name": "Company",
+				"type": "String"
+			},
+			{
+				"name": "Department",
+				"type": "String"
+			},
+			{
+				"name": "Job Title",
+				"type": "String"
+			},
+			{
+				"name": "Business Street",
+				"type": "String"
+			},
+			{
+				"name": "Business Street 2",
+				"type": "String"
+			},
+			{
+				"name": "Business Street 3",
+				"type": "String"
+			},
+			{
+				"name": "Business City",
+				"type": "String"
+			},
+			{
+				"name": "Business State",
+				"type": "String"
+			},
+			{
+				"name": "Business Postal Code",
+				"type": "String"
+			},
+			{
+				"name": "Business Country/Region",
+				"type": "String"
+			},
+			{
+				"name": "Home Street",
+				"type": "String"
+			},
+			{
+				"name": "Home Street 2",
+				"type": "String"
+			},
+			{
+				"name": "Home Street 3",
+				"type": "String"
+			},
+			{
+				"name": "Home City",
+				"type": "String"
+			},
+			{
+				"name": "Home State",
+				"type": "String"
+			},
+			{
+				"name": "Home Postal Code",
+				"type": "String"
+			},
+			{
+				"name": "Home Country/Region",
+				"type": "String"
+			},
+			{
+				"name": "Other Street",
+				"type": "String"
+			},
+			{
+				"name": "Other Street 2",
+				"type": "String"
+			},
+			{
+				"name": "Other Street 3",
+				"type": "String"
+			},
+			{
+				"name": "Other City",
+				"type": "String"
+			},
+			{
+				"name": "Other State",
+				"type": "String"
+			},
+			{
+				"name": "Other Postal Code",
+				"type": "String"
+			},
+			{
+				"name": "Other Country/Region",
+				"type": "String"
+			},
+			{
+				"name": "Assistant's Phone",
+				"type": "String"
+			},
+			{
+				"name": "Business Fax",
+				"type": "String"
+			},
+			{
+				"name": "Business Phone",
+				"type": "String"
+			},
+			{
+				"name": "Business Phone 2",
+				"type": "String"
+			},
+			{
+				"name": "Callback",
+				"type": "String"
+			},
+			{
+				"name": "Car Phone",
+				"type": "String"
+			},
+			{
+				"name": "Company Main Phone",
+				"type": "String"
+			},
+			{
+				"name": "Home Fax",
+				"type": "String"
+			},
+			{
+				"name": "Home Phone",
+				"type": "String"
+			},
+			{
+				"name": "Home Phone 2",
+				"type": "String"
+			},
+			{
+				"name": "ISDN",
+				"type": "String"
+			},
+			{
+				"name": "Mobile Phone",
+				"type": "String"
+			},
+			{
+				"name": "Other Fax",
+				"type": "String"
+			},
+			{
+				"name": "Other Phone",
+				"type": "String"
+			},
+			{
+				"name": "Pager",
+				"type": "String"
+			},
+			{
+				"name": "Primary Phone",
+				"type": "String"
+			},
+			{
+				"name": "Radio Phone",
+				"type": "String"
+			},
+			{
+				"name": "TTY/TDD Phone",
+				"type": "String"
+			},
+			{
+				"name": "Telex",
+				"type": "String"
+			},
+			{
+				"name": "Account",
+				"type": "String"
+			},
+			{
+				"name": "Anniversary",
+				"type": "String"
+			},
+			{
+				"name": "Assistant's Name",
+				"type": "String"
+			},
+			{
+				"name": "Billing Information",
+				"type": "String"
+			},
+			{
+				"name": "Birthday",
+				"type": "String"
+			},
+			{
+				"name": "Business Address PO Box",
+				"type": "String"
+			},
+			{
+				"name": "Categories",
+				"type": "String"
+			},
+			{
+				"name": "Children",
+				"type": "String"
+			},
+			{
+				"name": "Directory Server",
+				"type": "String"
+			},
+			{
+				"name": "E-mail Address",
+				"type": "String"
+			},
+			{
+				"name": "E-mail Type",
+				"type": "String"
+			},
+			{
+				"name": "E-mail Display Name",
+				"type": "String"
+			},
+			{
+				"name": "E-mail 2 Address",
+				"type": "String"
+			},
+			{
+				"name": "E-mail 2 Type",
+				"type": "String"
+			},
+			{
+				"name": "E-mail 2 Display Name",
+				"type": "String"
+			},
+			{
+				"name": "E-mail 3 Address",
+				"type": "String"
+			},
+			{
+				"name": "E-mail 3 Type",
+				"type": "String"
+			},
+			{
+				"name": "E-mail 3 Display Name",
+				"type": "String"
+			},
+			{
+				"name": "Gender",
+				"type": "String"
+			},
+			{
+				"name": "Government ID Number",
+				"type": "String"
+			},
+			{
+				"name": "Hobby",
+				"type": "String"
+			},
+			{
+				"name": "Home Address PO Box",
+				"type": "String"
+			},
+			{
+				"name": "Initials",
+				"type": "String"
+			},
+			{
+				"name": "Internet Free Busy",
+				"type": "String"
+			},
+			{
+				"name": "Keywords",
+				"type": "String"
+			},
+			{
+				"name": "Language",
+				"type": "String"
+			},
+			{
+				"name": "Location",
+				"type": "String"
+			},
+			{
+				"name": "Manager's Name",
+				"type": "String"
+			},
+			{
+				"name": "Mileage",
+				"type": "String"
+			},
+			{
+				"name": "Notes",
+				"type": "String"
+			},
+			{
+				"name": "Office Location",
+				"type": "String"
+			},
+			{
+				"name": "Organizational ID Number",
+				"type": "String"
+			},
+			{
+				"name": "Other Address PO Box",
+				"type": "String"
+			},
+			{
+				"name": "Priority",
+				"type": "String"
+			},
+			{
+				"name": "Private",
+				"type": "String"
+			},
+			{
+				"name": "Profession",
+				"type": "String"
+			},
+			{
+				"name": "Referred By",
+				"type": "String"
+			},
+			{
+				"name": "Sensitivity",
+				"type": "String"
+			},
+			{
+				"name": "Spouse",
+				"type": "String"
+			},
+			{
+				"name": "User 1",
+				"type": "String"
+			},
+			{
+				"name": "User 2",
+				"type": "String"
+			},
+			{
+				"name": "User 3",
+				"type": "String"
+			},
+			{
+				"name": "User 4",
+				"type": "String"
+			},
+			{
+				"name": "Web Page",
+				"type": "String"
+			}
+		]
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

@@ -1,0 +1,9 @@
+{
+	"name": "gbptech-adf-dev21",
+	"location": "centralus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "bd9c5b07-2f9f-4779-945d-bc9d17e8866b",
+		"tenantId": "b34521e8-82a4-412e-883d-cafb17f580f3"
+	}
+}
