@@ -16,7 +16,8 @@
 				"userProperties": [],
 				"typeProperties": {
 					"source": {
-						"type": "AzureSqlSource",
+						"type": "SqlServerSource",
+						"sqlReaderQuery": "Select * From Employee",
 						"queryTimeout": "02:00:00",
 						"partitionOption": "None"
 					},
@@ -43,7 +44,7 @@
 				},
 				"inputs": [
 					{
-						"referenceName": "AzureSqlTable1",
+						"referenceName": "SqlServerTable1",
 						"type": "DatasetReference"
 					}
 				],
