@@ -51,7 +51,13 @@
 				"outputs": [
 					{
 						"referenceName": "DelimitedText3",
-						"type": "DatasetReference"
+						"type": "DatasetReference",
+						"parameters": {
+							"FileName": {
+								"value": "@concat('OnPrem','_',utcNow())",
+								"type": "Expression"
+							}
+						}
 					}
 				]
 			}
