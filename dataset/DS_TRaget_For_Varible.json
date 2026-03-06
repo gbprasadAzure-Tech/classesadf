@@ -1,0 +1,77 @@
+{
+	"name": "DS_TRaget_For_Varible",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LS_AzureDataLakeStorage",
+			"type": "LinkedServiceReference"
+		},
+		"parameters": {
+			"tragetFile": {
+				"type": "string"
+			}
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"folderPath": "Customers",
+				"fileSystem": "traget"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "BranchId",
+				"type": "String"
+			},
+			{
+				"name": "BranchArea",
+				"type": "String"
+			},
+			{
+				"name": "productcode",
+				"type": "String"
+			},
+			{
+				"name": "Category",
+				"type": "String"
+			},
+			{
+				"name": "Category_Code",
+				"type": "String"
+			},
+			{
+				"name": "Quantity",
+				"type": "String"
+			},
+			{
+				"name": "salesdate",
+				"type": "String"
+			},
+			{
+				"name": "InvoiceId",
+				"type": "String"
+			},
+			{
+				"name": "PaymentMode",
+				"type": "String"
+			},
+			{
+				"name": "SalespersonId",
+				"type": "String"
+			},
+			{
+				"name": "manager_name",
+				"type": "String"
+			},
+			{
+				"name": "delivery_mode",
+				"type": "String"
+			}
+		]
+	}
+}
