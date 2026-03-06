@@ -17,8 +17,14 @@
 		"LS_AzureSqlDatabase_password": {
 			"value": ""
 		},
+		"SqlServer1_password": {
+			"value": ""
+		},
 		"AzureDataLakeStorage1_properties_typeProperties_url": {
 			"value": "https://gbptechusadlsdev21.dfs.core.windows.net/"
+		},
+		"AzureKeyVaultOnPrem_properties_typeProperties_baseUrl": {
+			"value": "https://GBPTechKeyVault.vault.azure.net/"
 		},
 		"AzureSqlDatabase1_properties_typeProperties_server": {
 			"value": "gbptech-centralus-sqlserver-dev21.database.windows.net"
@@ -40,6 +46,15 @@
 		},
 		"LS_AzureSqlDatabase_properties_typeProperties_userName": {
 			"value": "sqladmin"
+		},
+		"SqlServer1_properties_typeProperties_server": {
+			"value": "localhost\\SQLEXPRESS"
+		},
+		"SqlServer1_properties_typeProperties_database": {
+			"value": "Training38"
+		},
+		"SqlServer1_properties_typeProperties_userName": {
+			"value": "adf_user"
 		},
 		"containerUri": {
 			"value": ""
