@@ -1,0 +1,10 @@
+{
+	"name": "AzureKeyVaultOnPrem",
+	"properties": {
+		"annotations": [],
+		"type": "AzureKeyVault",
+		"typeProperties": {
+			"baseUrl": "https://GBPTechKeyVault.vault.azure.net/"
+		}
+	}
+}
